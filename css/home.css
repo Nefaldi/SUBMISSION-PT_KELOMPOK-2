@@ -1,0 +1,7 @@
+.background {
+    width: 100vw;
+    background-image: url("/assets/home.jpg");
+    height: 100vh;
+    background-size: 100vw;
+}
+
