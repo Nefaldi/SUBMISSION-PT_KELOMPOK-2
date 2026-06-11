@@ -165,21 +165,22 @@ body.products-page {
 .card-img-wrapper {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 240px;
   overflow: hidden;
-  background: #f1f5f9;
+  background: #f8fafc;
   cursor: pointer;
+  padding: 0.75rem;
 }
 
 .card-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+  object-fit: contain;
+  transition: var(--transition);
 }
 
 .product-card:hover .card-img {
-  transform: scale(1.1);
+  transform: none;
 }
 
 .card-body {
