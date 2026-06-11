@@ -6,8 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/about.css">
+
 </head>
 <body>
     <nav class="navbar">
@@ -29,6 +31,55 @@
 </nav>
 <main>
     <section class="background"></section>
+
+    <section class="section-products" id="sectionProducts">
+    <div class="products-hero">
+      <div class="hero-content">
+        <p class="hero-sub">Selamat Datang di</p>
+        <h1 class="hero-title">Produk Pilihan TOKO MUJUR</h1>
+        <p class="hero-desc">Temukan berbagai kebutuhan pokok, sayuran segar, dan keperluan sehari-hari dengan kualitas terbaik.</p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/fototoko.jpg" alt="Hero Toko Mujur" onerror="this.style.display='none'" />
+      </div>
+    </div>
+
+    <div class="category-bar">
+      <button class="cat-btn active" onclick="filterCategory('semua')">Semua</button>
+      <button class="cat-btn" onclick="filterCategory('kepala')">Beras Kepala</button>
+      <button class="cat-btn" onclick="filterCategory('bramo')">Beras Bramo</button>
+      <button class="cat-btn" onclick="filterCategory('superwin')">Beras Superwin</button>
+      <button class="cat-btn" onclick="filterCategory('cintanur')">Beras Cintanur</button>
+      <button class="cat-btn" onclick="filterCategory('premium')">Beras Premium</button>
+    </div>
+
+    <div class="products-container">
+      <div class="products-section" data-category="kepala">
+        <h2 class="section-title">Beras Kepala</h2>
+        <div class="products-grid" id="gridKepala"></div>
+      </div>
+
+      <div class="products-section" data-category="bramo">
+        <h2 class="section-title">Beras Bramo</h2>
+        <div class="products-grid" id="gridBramo"></div>
+      </div>
+
+      <div class="products-section" data-category="superwin">
+        <h2 class="section-title">Beras Superwin</h2>
+        <div class="products-grid" id="gridSuperwin"></div>
+      </div>
+
+      <div class="products-section" data-category="cintanur">
+        <h2 class="section-title">Beras Cintanur</h2>
+        <div class="products-grid" id="gridCintanur"></div>
+      </div>
+
+      <div class="products-section" data-category="premium">
+        <h2 class="section-title">Beras Premium</h2>
+        <div class="products-grid" id="gridPremium"></div>
+      </div>
+    </div>
+    </section>
 
     <section id="about" class="about-page">
       <section class="content-section">
@@ -124,6 +175,7 @@
 </footer>
 
 <script src="javascript/navbar.js"></script>
+<script src="javascript/product.js"></script>
 <script src="javascript/footer.js"></script>
 <script src="javascript/about.js"></script>
 </body>
