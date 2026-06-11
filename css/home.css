@@ -1,8 +1,17 @@
 .background {
-    width: 100vw;
-    background-image: url("/assets/home.jpg");
+    width: 100%;
+    background-image: url("/assets/homepage.jpg");
     height: 100vh;
-    background-size: 100vw;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+    .background {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        min-height: 250px;
+        background-size: cover;
+    }
+}

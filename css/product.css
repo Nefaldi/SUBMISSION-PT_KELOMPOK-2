@@ -17,7 +17,6 @@
 
 body.products-page {
   background-color: var(--bg-color);
-  font-family: 'DM Sans', sans-serif;
   color: var(--text-white);
   margin: 0;
   padding: 0;
@@ -52,7 +51,6 @@ body.products-page {
 }
 
 .hero-title {
-  font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   margin: 0 0 1rem 0;
   line-height: 1.2;
@@ -128,7 +126,6 @@ body.products-page {
 }
 
 .section-title {
-  font-family: 'Playfair Display', serif;
   font-size: 2rem;
   color: var(--text-dark);
   margin-bottom: 1.5rem;
@@ -603,5 +600,37 @@ body.products-page {
   
   .hero-title {
     font-size: 2.5rem;
+  }
+  
+  .category-bar {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+  }
+  
+  .cat-btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+  .card-img-wrapper {
+    height: 180px;
+  }
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .card-body {
+    padding: 1rem;
+  }
+  .card-price {
+    font-size: 1.1rem;
   }
 }

@@ -19,6 +19,7 @@ body {
   max-width: 1120px;
   margin: 0 auto;
   padding: 72px 24px;
+  border-top: 1px solid #dbe4d6;
 }
 
 .eyebrow {
@@ -127,7 +128,6 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
   gap: 42px;
-  border-top: 1px solid #dbe4d6;
 }
 
 .service-list p + p {
