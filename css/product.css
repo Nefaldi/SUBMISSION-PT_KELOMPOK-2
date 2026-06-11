@@ -4,7 +4,7 @@
   --primary-hover: #0b7d46;
   --bg-color: #f8fafc;
   --card-bg: #ffffff;
-  --text-dark: #1e293b;
+  --text-white: #fff;
   --text-muted: #64748b;
   --border-color: #e2e8f0;
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -18,7 +18,7 @@
 body.products-page {
   background-color: var(--bg-color);
   font-family: 'DM Sans', sans-serif;
-  color: var(--text-dark);
+  color: var(--text-white);
   margin: 0;
   padding: 0;
 }
@@ -56,6 +56,7 @@ body.products-page {
   font-size: 3.5rem;
   margin: 0 0 1rem 0;
   line-height: 1.2;
+  color: #ffffff;
 }
 
 .hero-desc {
