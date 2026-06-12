@@ -8,10 +8,10 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: linear-gradient(90deg, #0F9D58, #34C759);
+  background: linear-gradient(90deg, #0f9d58, #34c759);
   color: #ffffff;
-  font-family: 'Inter', sans-serif;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .navbar-container {
@@ -59,7 +59,7 @@ body {
 }
 
 .navbar .navbar-container .right-side .menu-item a:hover {
-  color: #A8F0C6;
+  color: #a8f0c6;
 }
 
 .navbar .navbar-container .toggle {
@@ -83,7 +83,9 @@ body {
   height: 2px;
   border-radius: 99px;
   background: #ffffff;
-  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .navbar .navbar-container .toggle.is-open span:nth-child(1) {
@@ -112,14 +114,14 @@ body {
   position: absolute;
   background: #ffffff;
   min-width: 150px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 4px;
   padding: 0.5rem 0;
 }
 
 .dropdown-content a {
-  color: #0F9D58;
+  color: #0f9d58;
   padding: 0.5rem 1rem;
   text-decoration: none;
   display: block;
@@ -128,7 +130,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background: #A8F0C6;
+  background: #a8f0c6;
   color: #ffffff;
 }
 

@@ -1,7 +1,7 @@
 .footer {
   background: #203644;
   color: #c6d2dc;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .footer .footer-container .top-side {
@@ -15,7 +15,7 @@
 
 .footer .footer-container .top-side .brand {
   display: flex;
-  justify-content:left;
+  justify-content: left;
 }
 
 .footer .footer-container .top-side .brand img {
@@ -62,7 +62,9 @@
   justify-content: center;
   color: #ffffff;
   text-decoration: none;
-  transition: transform 0.2s ease, filter 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
 }
 
 .footer .footer-container .top-side .social-link:hover {
@@ -83,14 +85,23 @@
 
 .footer .footer-container .top-side .instagram {
   border-radius: 10px;
-  background: radial-gradient(circle at 32% 98%, #fed373 0 18%, transparent 19%),
+  background:
+    radial-gradient(circle at 32% 98%, #fed373 0 18%, transparent 19%),
     radial-gradient(circle at 12% 95%, #f15245 0 33%, transparent 34%),
-    linear-gradient(135deg, #405de6, #833ab4 28%, #c13584 50%, #e1306c 70%, #fd1d1d 88%, #f77737);
+    linear-gradient(
+      135deg,
+      #405de6,
+      #833ab4 28%,
+      #c13584 50%,
+      #e1306c 70%,
+      #fd1d1d 88%,
+      #f77737
+    );
   padding: 6px;
 }
 
 .footer .footer-container .bottom-side {
-  background: linear-gradient(90deg, #0F9D58, #34C759);
+  background: linear-gradient(90deg, #0f9d58, #34c759);
   color: #ffffff;
   font-size: 1rem;
   font-weight: 600;

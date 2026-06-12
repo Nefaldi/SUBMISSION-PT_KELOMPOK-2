@@ -1,8 +1,16 @@
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; color: #1f2a24; background: #f6f8f4; font-family: Arial, Helvetica, sans-serif; }
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  color: #1f2a24;
+  background: #f6f8f4;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-/* About and Contact containers */
 .about .about-container .top-section,
 .about .about-container .bottom-section,
 .contact .contact-container {
@@ -14,10 +22,9 @@ body { margin: 0; color: #1f2a24; background: #f6f8f4; font-family: Arial, Helve
 }
 
 .about .about-container .top-section {
-  display: block; /* The first section is block in original */
+  display: block;
 }
 
-/* For labels/eyebrows */
 .about .about-container .about-label,
 .contact .contact-container .contact-label {
   color: #0f9d58;
@@ -26,12 +33,19 @@ body { margin: 0; color: #1f2a24; background: #f6f8f4; font-family: Arial, Helve
   text-transform: uppercase;
 }
 
-.about h1, .about h2, .about h3, .about p,
-.contact h1, .contact h2, .contact h3, .contact p {
+.about h1,
+.about h2,
+.about h3,
+.about p,
+.contact h1,
+.contact h2,
+.contact h3,
+.contact p {
   letter-spacing: 0;
 }
 
-.about h2, .contact h2 {
+.about h2,
+.contact h2 {
   margin: 0;
   color: #14261b;
   font-size: clamp(1.7rem, 3.6vw, 2.7rem);
