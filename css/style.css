@@ -67,7 +67,7 @@ body {
   color: #a8f0c6;
 }
 
-.navbar .navbar-container .toggle {
+.navbar .navbar-container .button-menu {
   display: none;
   width: 44px;
   height: 44px;
@@ -82,7 +82,7 @@ body {
   gap: 5px;
 }
 
-.navbar .navbar-container .toggle span {
+.navbar .navbar-container .button-menu span {
   display: block;
   width: 22px;
   height: 2px;
@@ -93,15 +93,15 @@ body {
     opacity 0.25s ease;
 }
 
-.navbar .navbar-container .toggle.is-open span:nth-child(1) {
+.navbar .navbar-container .button-menu.is-open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
 
-.navbar .navbar-container .toggle.is-open span:nth-child(2) {
+.navbar .navbar-container .button-menu.is-open span:nth-child(2) {
   opacity: 0;
 }
 
-.navbar .navbar-container .toggle.is-open span:nth-child(3) {
+.navbar .navbar-container .button-menu.is-open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
 
@@ -150,7 +150,7 @@ body {
     padding: 0.5rem 1rem;
   }
 
-  .navbar .navbar-container .toggle {
+  .navbar .navbar-container .button-menu {
     display: inline-flex;
   }
 

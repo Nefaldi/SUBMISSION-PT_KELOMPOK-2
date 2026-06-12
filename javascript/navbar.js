@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", initNavbarMenu);
 
 function initNavbarMenu() {
-  const toggle = document.querySelector(".toggle");
+  const buttonMenu = document.querySelector(".button-menu");
   const menu = document.getElementById("navbarMenu");
-  if (!toggle || !menu) return;
+  if (!buttonMenu || !menu) return;
 
-  toggle.addEventListener("click", () => {
+  buttonMenu.addEventListener("click", () => {
     const isOpen = menu.classList.toggle("is-open");
-    toggle.classList.toggle("is-open", isOpen);
-    toggle.setAttribute("aria-expanded", String(isOpen));
+    buttonMenu.classList.toggle("is-open", isOpen);
+    buttonMenu.setAttribute("aria-expanded", String(isOpen));
   });
 
   menu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       menu.classList.remove("is-open");
-      toggle.classList.remove("is-open");
-      toggle.setAttribute("aria-expanded", "false");
+      buttonMenu.classList.remove("is-open");
+      buttonMenu.setAttribute("aria-expanded", "false");
     });
   });
 }
