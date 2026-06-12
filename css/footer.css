@@ -77,29 +77,6 @@
   display: block;
 }
 
-.footer .footer-container .top-side .facebook {
-  border-radius: 50%;
-  background: #1877f2;
-  padding: 7px;
-}
-
-.footer .footer-container .top-side .instagram {
-  border-radius: 10px;
-  background:
-    radial-gradient(circle at 32% 98%, #fed373 0 18%, transparent 19%),
-    radial-gradient(circle at 12% 95%, #f15245 0 33%, transparent 34%),
-    linear-gradient(
-      135deg,
-      #405de6,
-      #833ab4 28%,
-      #c13584 50%,
-      #e1306c 70%,
-      #fd1d1d 88%,
-      #f77737
-    );
-  padding: 6px;
-}
-
 .footer .footer-container .bottom-side {
   background: linear-gradient(90deg, #0f9d58, #34c759);
   color: #ffffff;
