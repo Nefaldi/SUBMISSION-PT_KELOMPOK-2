@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', initNavbarMenu);
 
 function initNavbarMenu() {
-  const toggle = document.querySelector('.navbar-toggle');
+  const toggle = document.querySelector('.toggle');
   const menu = document.getElementById('navbarMenu');
   if (!toggle || !menu) return;
 

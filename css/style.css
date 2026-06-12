@@ -14,7 +14,7 @@ body {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.navbar-container {
+.navbar .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,24 +23,24 @@ body {
   box-sizing: border-box;
 }
 
-.navbar-left {
+.navbar .navbar-container .left-side {
   display: flex;
   align-items: center;
   flex-shrink: 0;
 }
 
-.logo {
+.navbar .navbar-container .left-side .logo {
   height: 60px;
   width: auto;
   margin-right: 0.5rem;
 }
 
-.site-name {
+.navbar .navbar-container .left-side .site-name {
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.navbar-menu {
+.navbar .navbar-container .right-side {
   list-style: none;
   display: flex;
   justify-content: flex-end;
@@ -50,7 +50,7 @@ body {
   padding: 0;
 }
 
-.menu-item a {
+.navbar .navbar-container .right-side .menu-item a {
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
@@ -58,11 +58,11 @@ body {
   transition: color 0.3s ease;
 }
 
-.menu-item a:hover {
+.navbar .navbar-container .right-side .menu-item a:hover {
   color: #A8F0C6;
 }
 
-.navbar-toggle {
+.navbar .navbar-container .toggle {
   display: none;
   width: 44px;
   height: 44px;
@@ -77,7 +77,7 @@ body {
   gap: 5px;
 }
 
-.navbar-toggle span {
+.navbar .navbar-container .toggle span {
   display: block;
   width: 22px;
   height: 2px;
@@ -86,15 +86,15 @@ body {
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-.navbar-toggle.is-open span:nth-child(1) {
+.navbar .navbar-container .toggle.is-open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
 
-.navbar-toggle.is-open span:nth-child(2) {
+.navbar .navbar-container .toggle.is-open span:nth-child(2) {
   opacity: 0;
 }
 
-.navbar-toggle.is-open span:nth-child(3) {
+.navbar .navbar-container .toggle.is-open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
 
@@ -137,17 +137,17 @@ body {
 }
 
 @media (max-width: 768px) {
-  .navbar-container {
+  .navbar .navbar-container {
     align-items: center;
     flex-wrap: wrap;
     padding: 0.5rem 1rem;
   }
 
-  .navbar-toggle {
+  .navbar .navbar-container .toggle {
     display: inline-flex;
   }
 
-  .navbar-menu {
+  .navbar .navbar-container .right-side {
     display: none;
     flex-direction: column;
     align-items: stretch;
@@ -158,15 +158,15 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.28);
   }
 
-  .navbar-menu.is-open {
+  .navbar .navbar-container .right-side.is-open {
     display: flex;
   }
 
-  .menu-item {
+  .navbar .navbar-container .right-side .menu-item {
     width: 100%;
   }
 
-  .menu-item a {
+  .navbar .navbar-container .right-side .menu-item a {
     display: block;
     padding: 0.85rem 0.25rem;
   }

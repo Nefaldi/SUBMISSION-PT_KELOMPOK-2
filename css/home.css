@@ -1,7 +1,7 @@
 /* Home Page Core Variables */
 :root {
   --primary-color: #0F9D58;
-  --primary-hover: #0b7d46;
+  --primary-hover: #2d8149;
   --bg-color: #f8fafc;
   --card-bg: #ffffff;
   --text-white: #fff;
@@ -16,25 +16,23 @@
 }
 
 /* Hero Section */
-.home-hero {
+.home .home-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 4rem 5%;
-  margin-bottom: 2rem;
-  background: linear-gradient(135deg, #0F9D58 0%, #A8F0C6 100%);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0F9D58 0%, #2d8149 100%);
   color: white;
-  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-  box-shadow: var(--shadow-md);
 }
 
-.hero-content {
+.home .home-container .left-side {
   flex: 1;
   max-width: 600px;
   animation: slideInLeft 0.8s ease-out;
 }
 
-.hero-sub {
+.home .home-container .left-side .home-label {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -42,37 +40,38 @@
   opacity: 0.9;
 }
 
-.hero-title {
-  font-size: 3.5rem;
+.home .home-container .left-side h1 {
+  font-size: 3rem;
   margin: 0 0 1rem 0;
   line-height: 1.2;
   color: #ffffff;
 }
 
-.hero-desc {
-  font-size: 1.1rem;
+.home .home-container .left-side p {
+  font-size: 1.3rem;
   line-height: 1.6;
   opacity: 0.9;
 }
 
-.hero-image {
+.home .home-container .right-side {
   flex: 1;
   display: flex;
   justify-content: flex-end;
   animation: slideInRight 0.8s ease-out;
 }
 
-.hero-image img {
+.home .home-container .right-side img {
   max-width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   transform: rotate(2deg);
   transition: var(--transition);
 }
 
-.hero-image img:hover {
+.home .home-container .right-side img:hover {
   transform: rotate(0deg) scale(1.05);
 }
 
@@ -88,17 +87,18 @@
 }
 
 @media (max-width: 768px) {
-  .home-hero {
+  .home .home-container {
     flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 2rem 24px;
+    padding: 4rem 24px 2rem;
   }
   
-  .hero-image {
+  .home .home-container .right-side {
     margin-top: 2rem;
   }
   
-  .hero-title {
+  .home .home-container .left-side h1 {
     font-size: 2.5rem;
   }
 }

@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
   <div class="navbar-container">
-    <div class="navbar-left">
-      <img src="assets/logo.png" alt="Logo" class="logo" />
+    <div class="left-side">
+      <img src="assets/logo.png" alt="TOKO MUJUR" class="logo" onerror="this.style.display='none'">
       <span class="site-name">TOKO MUJUR</span>
     </div>
-    <ul class="navbar-menu" id="navbarMenu">
+    <ul class="right-side" id="navbarMenu">
       <li class="menu-item"><a href="index.html">Home</a></li>
-      <li class="menu-item"><a href="product.html">Products</a></li>
-      <li class="menu-item"><a href="about.html">About</a></li>
-      <li class="menu-item"><a href="contact.html">Contact</a></li>
+      <li class="menu-item"><a href="product.html">Produk</a></li>
+      <li class="menu-item"><a href="about.html">Tentang</a></li>
+      <li class="menu-item"><a href="contact.html">Kontak</a></li>
     </ul>
-    <button class="navbar-toggle" type="button" aria-label="Buka menu" aria-controls="navbarMenu" aria-expanded="false">
+    <button class="toggle" aria-label="Toggle Navigation" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
@@ -30,65 +30,53 @@
   </div>
 </nav>
 
-<main>
-    <section class="section-products" id="sectionProducts">
-    <div class="home-hero">
-      <div class="hero-content">
-        <h1 class="hero-title">SELAMAT DATANG DI TOKOH MUJUR</h1>
-        <p class="hero-desc">Temukan berbagai jenis beras mulai dari kualitas medium hingga premium, Kami menjamin keaslian dan kesegaran rasa di setiap butirnya untuk kepuasan Anda.</p>
+<main class="home">
+    <div class="home-container">
+      <div class="left-side">
+        <h1>SELAMAT DATANG DI TOKO MUJUR</h1>
+        <p>"Siap melayani kebutuhan pangan Anda dengan sepenuh hati" Temukan berbagai jenis beras mulai dari kualitas medium hingga premium, Kami menjamin keaslian dan kesegaran rasa di setiap butirnya untuk kepuasan Anda.</p>
       </div>
-      <div class="hero-image">
+      <div class="right-side">
         <img src="assets/fototoko.jpg" alt="Hero Toko Mujur" onerror="this.style.display='none'" />
       </div>
     </div>
-    </section>
 </main>
 
-<footer id="footer">
-  <div class="footer-main">
-    <div class="footer-brand">
-      <img src="assets/logo.png" alt="TOKO MUJUR" onerror="this.style.display='none'" />
-    </div>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="top-side">
+      <div class="brand">
+        <img src="assets/logo.png" alt="TOKO MUJUR" onerror="this.style.display='none'" />
+      </div>
 
-    <div class="footer-col footer-contact">
-      <h4>Contact</h4>
-      <p><span aria-hidden="true">&#9742;</span> 082194311111</p>
-    </div>
+      <div class="col contact">
+        <h4>Contact</h4>
+        <p><span aria-hidden="true">&#9742;</span> 082194311111</p>
+      </div>
 
-    <div class="footer-col footer-address">
-      <h4>Address</h4>
-      <address>Pasar Masomba Jl. Tj. Pangimpuan tengah No.22, Tatura Utara, Kec. Palu Sel.<br>Kota Palu, Sulawesi Tengah 94111</address>
-    </div>
+      <div class="col address">
+        <h4>Address</h4>
+        <address>Pasar Masomba Jl. Tj. Pangimpuan tengah No.22, Tatura Utara, Kec. Palu Sel.<br>Kota Palu, Sulawesi Tengah 94111</address>
+      </div>
 
-    <div class="footer-col">
-      <h4>Connect with us</h4>
-      <div class="social-links">
-        <a class="social-link facebook" href="#" title="Facebook" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M14.4 8.4V6.9c0-.7.5-.9 1-.9h1.9V2.7c-.3 0-1.5-.1-2.9-.1-2.9 0-4.8 1.7-4.8 4.9v.9H6.8v3.7h2.8v9.3h3.8v-9.3h3.1l.5-3.7h-3.6Z"/>
-          </svg>
-        </a>
-        <a class="social-link instagram" href="https://www.instagram.com/alfiii.as_?igsh=MXhyMnNmOGh0M3g5Mg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="4" y="4" width="16" height="16" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
-            <circle cx="12" cy="12" r="3.4" fill="none" stroke="currentColor" stroke-width="2"/>
-            <circle cx="17" cy="7" r="1.2"/>
-          </svg>
-        </a>
-        <a class="social-link whatsapp" href="https://wa.me/6282194311111" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 2.5A9.5 9.5 0 0 0 3.8 16.8L2.7 21.3l4.6-1.1A9.5 9.5 0 1 0 12 2.5Zm0 17.3a7.8 7.8 0 0 1-4-1.1l-.3-.2-2.7.7.7-2.6-.2-.3A7.8 7.8 0 1 1 12 19.8Zm4.3-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.2.2-.3.2-.6.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.3 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.9 3 4.7 4.1.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .2-1.1 0-.2-.2-.3-.4-.4Z"/>
-          </svg>
-        </a>
+      <div class="col">
+        <h4>Connect with us</h4>
+        <div class="social-links">
+          <a class="social-link facebook" href="#" title="Facebook" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="social-link instagram" href="https://www.instagram.com/alfiii.as_?igsh=MXhyMnNmOGh0M3g5Mg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
       </div>
     </div>
+    <div class="bottom-side">&copy; 2026 TOKO MUJUR</div>
   </div>
-  <div class="footer-bottom">&copy; 2026 TOKO MUJUR</div>
 </footer>
 
 <script src="javascript/navbar.js"></script>
 
 </body>
-</html>
 
  

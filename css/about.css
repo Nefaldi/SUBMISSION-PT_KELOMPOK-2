@@ -1,69 +1,59 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: #1f2a24; background: #f6f8f4; font-family: Arial, Helvetica, sans-serif; }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  color: #1f2a24;
-  background: #f6f8f4;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.content-section,
-.split-section,
-.contact-section {
+/* About and Contact containers */
+.about .about-container .top-section,
+.about .about-container .bottom-section,
+.contact .contact-container {
   padding: 72px 5%;
   border-top: 1px solid #dbe4d6;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 42px;
 }
 
-.eyebrow {
+.about .about-container .top-section {
+  display: block; /* The first section is block in original */
+}
+
+/* For labels/eyebrows */
+.about .about-container .about-label,
+.contact .contact-container .contact-label {
   color: #0f9d58;
   font-size: 1.2rem;
   font-weight: 800;
   text-transform: uppercase;
 }
 
-h1,
-h2,
-h3,
-p {
+.about h1, .about h2, .about h3, .about p,
+.contact h1, .contact h2, .contact h3, .contact p {
   letter-spacing: 0;
 }
 
-h1 {
-  max-width: 720px;
-  margin: 0;
-  color: #14261b;
-  font-size: clamp(2.25rem, 6vw, 4.6rem);
-  line-height: 1.05;
-}
-
-h2 {
+.about h2, .contact h2 {
   margin: 0;
   color: #14261b;
   font-size: clamp(1.7rem, 3.6vw, 2.7rem);
   line-height: 1.15;
 }
 
-h3 {
+.about h3 {
   margin: 0 0 10px;
   color: #173320;
   font-size: 1.15rem;
 }
 
-.service-list p,
-.contact-card p,
-.feature-card p {
+.about .about-container .bottom-section .right-side p,
+.about .about-container .top-section .right-side .feature-card p,
+.contact .contact-container .right-side p {
   color: #4f5d53;
   font-size: 1rem;
   line-height: 1.7;
 }
 
-.Goggle-Maps-Link {
+.contact .contact-container .right-side .maps-link,
+.contact .contact-container .right-side .wa-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -76,83 +66,59 @@ h3 {
   text-decoration: none;
 }
 
-.Goggle-Maps-Link:hover {
+.contact .contact-container .right-side .maps-link:hover,
+.contact .contact-container .right-side .wa-link:hover {
   background: #0b7d46;
 }
 
-.whatsapp-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 46px;
-  padding: 0 18px;
-  border-radius: 8px;
-  background: #0f9d58;
-  color: #ffffff;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.whatsapp-link:hover {
-  background: #0b7d46;
-}
-
-.section-heading {
+.about .about-container .top-section .left-side {
   max-width: 720px;
   margin-bottom: 30px;
 }
 
-.feature-grid {
+.about .about-container .top-section .right-side {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
-.feature-card,
-.contact-card {
+.about .about-container .top-section .right-side .feature-card,
+.contact .contact-container .right-side {
   border: 1px solid #dbe4d6;
   border-radius: 8px;
   background: #ffffff;
   padding: 24px;
 }
 
-.feature-card p,
-.contact-card p {
+.about .about-container .top-section .right-side .feature-card p,
+.contact .contact-container .right-side p {
   margin: 0;
 }
 
-.split-section,
-.contact-section {
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  gap: 42px;
-}
-
-.service-list p + p {
+.about .about-container .bottom-section .right-side p + p {
   margin-top: 18px;
 }
 
-.contact-card {
+.contact .contact-container .right-side {
   display: grid;
   gap: 18px;
 }
 
 @media (max-width: 800px) {
-  .split-section,
-  .contact-section {
+  .about .about-container .bottom-section,
+  .contact .contact-container {
     grid-template-columns: 1fr;
   }
 
-  .feature-grid {
+  .about .about-container .top-section .right-side {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 520px) {
-  .content-section,
-  .split-section,
-  .contact-section {
+  .about .about-container .top-section,
+  .about .about-container .bottom-section,
+  .contact .contact-container {
     padding: 48px 18px;
   }
-
 }
