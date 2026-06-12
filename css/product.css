@@ -162,7 +162,7 @@ body.products-page {
 }
 
 @media (max-width: 768px) {
-  .category-bar {
+  .product .product-container .top-side .category-bar {
     justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -170,7 +170,7 @@ body.products-page {
     padding-bottom: 0.5rem;
   }
 
-  .cat-btn {
+  .product .product-container .top-side .cat-btn {
     flex: 0 0 auto;
     white-space: nowrap;
   }
