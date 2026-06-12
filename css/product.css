@@ -1,7 +1,7 @@
 :root {
   --primary-color: #0f9d58;
   --primary-hover: #0b7d46;
-  --bg-color: #f8fafc;
+  --bg-color: #ffffff;
   --card-bg: #ffffff;
   --text-white: #fff;
   --text-muted: #64748b;
@@ -107,7 +107,7 @@ body.products-page {
   width: 100%;
   height: 240px;
   overflow: hidden;
-  background: #f8fafc;
+  background: #ffffff;
   cursor: pointer;
   padding: 0.75rem;
 }
