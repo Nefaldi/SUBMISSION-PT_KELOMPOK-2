@@ -78,7 +78,7 @@ body.products-page {
 
 .product .product-container .bottom-side .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
@@ -178,7 +178,7 @@ body.products-page {
 
 @media (max-width: 576px) {
   .products-grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr));
     gap: 1rem;
   }
   .card-img-wrapper {
