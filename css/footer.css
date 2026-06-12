@@ -6,7 +6,7 @@ footer {
 
 .footer-main {
   min-height: 190px;
-  padding: 3.8rem 9vw 3rem;
+  padding: 3.8rem 5% 3rem;
   display: grid;
   grid-template-columns: 1fr 1.1fr 1.7fr 1fr;
   align-items: start;
@@ -110,7 +110,7 @@ footer {
   .footer-main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2.5rem;
-    padding: 3rem 6vw;
+    padding: 3rem 5%;
   }
 
   .footer-brand {

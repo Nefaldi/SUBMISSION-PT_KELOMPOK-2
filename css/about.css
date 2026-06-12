@@ -16,9 +16,7 @@ body {
 .content-section,
 .split-section,
 .contact-section {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 72px 24px;
+  padding: 72px 5%;
   border-top: 1px solid #dbe4d6;
 }
 

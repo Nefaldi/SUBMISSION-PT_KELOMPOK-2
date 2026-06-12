@@ -1,15 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem;
   background: linear-gradient(90deg, #0F9D58, #34C759);
   color: #ffffff;
   font-family: 'Inter', sans-serif;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .navbar-left {
@@ -126,7 +137,7 @@
 }
 
 @media (max-width: 768px) {
-  .navbar {
+  .navbar-container {
     align-items: center;
     flex-wrap: wrap;
     padding: 0.5rem 1rem;
